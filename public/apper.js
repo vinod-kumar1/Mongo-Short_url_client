@@ -21,6 +21,7 @@ function sendUrl() {
     })
     .then((data) => {
       shortUrl.innerText = `https://server-auth-twgx-23c9y5orx-vinodakumara-as-projects.vercel.app/${data.hash}`;
+      document.getElementById("shortURL").style.display="block";
       shortUrlDiv.style.display = "block";
     });
 }
