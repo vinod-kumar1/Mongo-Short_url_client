@@ -1,8 +1,8 @@
 let shortUrl = document.getElementById("shortURL");
 let shortUrlDiv = document.getElementById("divver");
-let loader = document.getElementById("loader").style.display;
 
 function sendUrl() {
+  document.getElementById("shortURL").style.display="none";
   document.getElementById("loader").style.display = "block";
   let url = document.getElementById("url").value;
   fetch(
